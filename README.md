@@ -1,1 +1,277 @@
-# nome-da-atividade
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantio Direto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f2;
+            color: #263b28;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #245c2a, #4f8f3a);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        nav {
+            background-color: #183d1d;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a8d46f;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            color: #2d6a32;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #347a38;
+            margin-bottom: 10px;
+        }
+
+        .etapas {
+            background-color: #e2eedb;
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        .etapas ol {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .etapas li {
+            margin-bottom: 15px;
+            padding-left: 5px;
+        }
+
+        .destaque {
+            background-color: #2f6f35;
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .destaque h2 {
+            color: white;
+        }
+
+        footer {
+            background-color: #183d1d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 Plantio Direto</h1>
+        <p>
+            Uma técnica agrícola que ajuda a conservar o solo,
+            reduzir a erosão e promover uma agricultura mais sustentável.
+        </p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como">Como funciona</a>
+        <a href="#importancia">Importância</a>
+    </nav>
+
+    <main>
+
+        <section id="sobre">
+            <h2>O que é Plantio Direto?</h2>
+
+            <p class="intro">
+                O plantio direto é um sistema de manejo agrícola no qual
+                a semeadura é realizada sobre a palhada da cultura anterior,
+                com pouca ou nenhuma movimentação do solo. A técnica busca
+                preservar a estrutura do solo e melhorar sua qualidade ao
+                longo do tempo.
+            </p>
+        </section>
+
+        <section id="beneficios">
+            <h2>Benefícios do Plantio Direto</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>🌎 Conservação do solo</h3>
+                    <p>
+                        A cobertura vegetal protege o solo contra a erosão
+                        causada pela chuva e pelo vento.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>💧 Conservação da água</h3>
+                    <p>
+                        A palhada ajuda a diminuir a evaporação e favorece
+                        a infiltração da água no solo.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🌿 Mais matéria orgânica</h3>
+                    <p>
+                        Os restos vegetais deixados na superfície contribuem
+                        para o aumento da matéria orgânica do solo.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🚜 Menor revolvimento</h3>
+                    <p>
+                        A redução do preparo do solo pode diminuir o número
+                        de operações com máquinas agrícolas.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="como">
+            <h2>Como funciona?</h2>
+
+            <div class="etapas">
+                <ol>
+                    <li>
+                        <strong>Manutenção da cobertura:</strong>
+                        os restos da cultura anterior permanecem sobre o solo.
+                    </li>
+
+                    <li>
+                        <strong>Rotação de culturas:</strong>
+                        diferentes culturas são utilizadas ao longo das safras.
+                    </li>
+
+                    <li>
+                        <strong>Semeadura:</strong>
+                        as sementes são colocadas diretamente no solo,
+                        geralmente com máquinas específicas para plantio direto.
+                    </li>
+
+                    <li>
+                        <strong>Proteção do solo:</strong>
+                        a palhada permanece na superfície, ajudando a proteger
+                        o solo durante o desenvolvimento da nova cultura.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="importancia">
+            <div class="destaque">
+                <h2>Por que o Plantio Direto é importante?</h2>
+
+                <p>
+                    O plantio direto pode contribuir para uma agricultura
+                    mais sustentável ao favorecer a conservação do solo e
+                    da água, reduzir a erosão e melhorar as condições do
+                    ambiente agrícola.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌱 Projeto sobre Agricultura Sustentável — Plantio Direto</p>
+    </footer>
+
+</body>
+</html>
